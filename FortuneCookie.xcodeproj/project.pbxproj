@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36C72FA5220E4EAB9DA7FABB /* Pods_FortuneCookieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA904DA490F4ED2DF5D6F019 /* Pods_FortuneCookieTests.framework */; };
+		CD6710122357C67B00A7662D /* FortuneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6710112357C67B00A7662D /* FortuneModel.swift */; };
+		CD819AE6234BA8BF00BBAD03 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819AE5234BA8BF00BBAD03 /* LoadingView.swift */; };
+		CD819AEE234CD8D400BBAD03 /* LoadingViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819AED234CD8D400BBAD03 /* LoadingViewConstraints.swift */; };
+		CD819AF1234CDB4200BBAD03 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819AF0234CDB4200BBAD03 /* LoadingViewController.swift */; };
+		CD819AF3234CDD9D00BBAD03 /* BreakCookieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819AF2234CDD9D00BBAD03 /* BreakCookieView.swift */; };
+		CD819AF5234D075800BBAD03 /* FortuneScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819AF4234D075800BBAD03 /* FortuneScreenView.swift */; };
+		CD819AF7234D2C1400BBAD03 /* FortuneScreenViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819AF6234D2C1400BBAD03 /* FortuneScreenViewConstraints.swift */; };
+		CD819AF9234D3FEF00BBAD03 /* FortuneScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819AF8234D3FEF00BBAD03 /* FortuneScreenViewController.swift */; };
+		CD819AFB234D472500BBAD03 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD819AFA234D472500BBAD03 /* NetworkManager.swift */; };
+		CD839BE5234D5A7A00F8A04B /* candm.json in Resources */ = {isa = PBXBuildFile; fileRef = CD839BE4234D5A7A00F8A04B /* candm.json */; };
+		CD839BE7234D5C1B00F8A04B /* mrcookiegetsdrunk.json in Resources */ = {isa = PBXBuildFile; fileRef = CD839BE6234D5C1B00F8A04B /* mrcookiegetsdrunk.json */; };
+		CDB3011E235F5AFC00286C97 /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = CDB30119235F5AFC00286C97 /* default.json */; };
+		CDB3011F235F5AFC00286C97 /* data-mango.json in Resources */ = {isa = PBXBuildFile; fileRef = CDB3011A235F5AFC00286C97 /* data-mango.json */; };
+		CDB30120235F5AFC00286C97 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CDB3011B235F5AFC00286C97 /* loading.json */; };
+		CDB30121235F5AFC00286C97 /* pow.json in Resources */ = {isa = PBXBuildFile; fileRef = CDB3011C235F5AFC00286C97 /* pow.json */; };
+		CDB30122235F5AFC00286C97 /* email-mango.json in Resources */ = {isa = PBXBuildFile; fileRef = CDB3011D235F5AFC00286C97 /* email-mango.json */; };
+		CDBF5C29235E07F100AA8D2B /* AnimatedIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF5C28235E07F100AA8D2B /* AnimatedIntroView.swift */; };
+		CDBF5C2B235E099000AA8D2B /* AnimatedIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF5C2A235E099000AA8D2B /* AnimatedIntroViewController.swift */; };
+		CDBF5C2E235E225000AA8D2B /* AnimatedIntroViewSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF5C2D235E225000AA8D2B /* AnimatedIntroViewSegue.swift */; };
+		CDBF5C30235E597200AA8D2B /* AnimatedIntroViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF5C2F235E597200AA8D2B /* AnimatedIntroViewConstraints.swift */; };
+		CDC7D20022E0C15B000CAAD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7D1FF22E0C15B000CAAD1 /* AppDelegate.swift */; };
+		CDC7D20222E0C15B000CAAD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7D20122E0C15B000CAAD1 /* ViewController.swift */; };
+		CDC7D20522E0C15B000CAAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC7D20322E0C15B000CAAD1 /* Main.storyboard */; };
+		CDC7D20822E0C15B000CAAD1 /* FortuneCookie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDC7D20622E0C15B000CAAD1 /* FortuneCookie.xcdatamodeld */; };
+		CDC7D20A22E0C15D000CAAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC7D20922E0C15D000CAAD1 /* Assets.xcassets */; };
+		CDC7D20D22E0C15D000CAAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC7D20B22E0C15D000CAAD1 /* LaunchScreen.storyboard */; };
+		CDC7D21822E0C15D000CAAD1 /* FortuneCookieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7D21722E0C15D000CAAD1 /* FortuneCookieTests.swift */; };
+		CDC7D22322E0DE02000CAAD1 /* CookieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7D22222E0DE02000CAAD1 /* CookieCell.swift */; };
+		F3BEDA9A28DB8862524036CD /* Pods_FortuneCookie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF3F6E3721F02A0FFDD30B4 /* Pods_FortuneCookie.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDC7D21422E0C15D000CAAD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDC7D1F422E0C15B000CAAD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDC7D1FB22E0C15B000CAAD1;
+			remoteInfo = FortuneCookie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AF3F6E3721F02A0FFDD30B4 /* Pods_FortuneCookie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortuneCookie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2226FBC7BDF07125F290B864 /* Pods-FortuneCookie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortuneCookie.release.xcconfig"; path = "Target Support Files/Pods-FortuneCookie/Pods-FortuneCookie.release.xcconfig"; sourceTree = "<group>"; };
+		29A319ABE14B68ED503E2C11 /* Pods-FortuneCookieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortuneCookieTests.debug.xcconfig"; path = "Target Support Files/Pods-FortuneCookieTests/Pods-FortuneCookieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C7A42F071EFFABE5A995963 /* Pods-FortuneCookieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortuneCookieTests.release.xcconfig"; path = "Target Support Files/Pods-FortuneCookieTests/Pods-FortuneCookieTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB13364E46291F23D34FC7E0 /* Pods-FortuneCookie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortuneCookie.debug.xcconfig"; path = "Target Support Files/Pods-FortuneCookie/Pods-FortuneCookie.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6710112357C67B00A7662D /* FortuneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneModel.swift; sourceTree = "<group>"; };
+		CD819AE5234BA8BF00BBAD03 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CD819AED234CD8D400BBAD03 /* LoadingViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewConstraints.swift; sourceTree = "<group>"; };
+		CD819AF0234CDB4200BBAD03 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		CD819AF2234CDD9D00BBAD03 /* BreakCookieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakCookieView.swift; sourceTree = "<group>"; };
+		CD819AF4234D075800BBAD03 /* FortuneScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneScreenView.swift; sourceTree = "<group>"; };
+		CD819AF6234D2C1400BBAD03 /* FortuneScreenViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneScreenViewConstraints.swift; sourceTree = "<group>"; };
+		CD819AF8234D3FEF00BBAD03 /* FortuneScreenViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = FortuneScreenViewController.swift; sourceTree = "<group>"; tabWidth = 1; usesTabs = 1; };
+		CD819AFA234D472500BBAD03 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CD839BE4234D5A7A00F8A04B /* candm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = candm.json; path = ../../../../Downloads/candm.json; sourceTree = "<group>"; };
+		CD839BE6234D5C1B00F8A04B /* mrcookiegetsdrunk.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mrcookiegetsdrunk.json; path = ../../../../Downloads/mrcookiegetsdrunk.json; sourceTree = "<group>"; };
+		CDB30119235F5AFC00286C97 /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = default.json; path = "../../../../Documents/Tools/Lottie Animations/default.json"; sourceTree = "<group>"; };
+		CDB3011A235F5AFC00286C97 /* data-mango.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "data-mango.json"; path = "../../../../Documents/Tools/Lottie Animations/data-mango.json"; sourceTree = "<group>"; };
+		CDB3011B235F5AFC00286C97 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loading.json; path = "../../../../Documents/Tools/Lottie Animations/loading.json"; sourceTree = "<group>"; };
+		CDB3011C235F5AFC00286C97 /* pow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = pow.json; path = "../../../../Documents/Tools/Lottie Animations/pow.json"; sourceTree = "<group>"; };
+		CDB3011D235F5AFC00286C97 /* email-mango.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "email-mango.json"; path = "../../../../Documents/Tools/Lottie Animations/email-mango.json"; sourceTree = "<group>"; };
+		CDBF5C28235E07F100AA8D2B /* AnimatedIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIntroView.swift; sourceTree = "<group>"; };
+		CDBF5C2A235E099000AA8D2B /* AnimatedIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIntroViewController.swift; sourceTree = "<group>"; };
+		CDBF5C2D235E225000AA8D2B /* AnimatedIntroViewSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIntroViewSegue.swift; sourceTree = "<group>"; };
+		CDBF5C2F235E597200AA8D2B /* AnimatedIntroViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedIntroViewConstraints.swift; sourceTree = "<group>"; };
+		CDC7D1FC22E0C15B000CAAD1 /* FortuneCookie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneCookie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC7D1FF22E0C15B000CAAD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDC7D20122E0C15B000CAAD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDC7D20422E0C15B000CAAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDC7D20722E0C15B000CAAD1 /* FortuneCookie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FortuneCookie.xcdatamodel; sourceTree = "<group>"; };
+		CDC7D20922E0C15D000CAAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDC7D20C22E0C15D000CAAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDC7D20E22E0C15D000CAAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC7D21322E0C15D000CAAD1 /* FortuneCookieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortuneCookieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC7D21722E0C15D000CAAD1 /* FortuneCookieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCookieTests.swift; sourceTree = "<group>"; };
+		CDC7D22222E0DE02000CAAD1 /* CookieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieCell.swift; sourceTree = "<group>"; };
+		FA904DA490F4ED2DF5D6F019 /* Pods_FortuneCookieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortuneCookieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDC7D1F922E0C15B000CAAD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BEDA9A28DB8862524036CD /* Pods_FortuneCookie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC7D21022E0C15D000CAAD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C72FA5220E4EAB9DA7FABB /* Pods_FortuneCookieTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CE6ADDE383BD4BE8B14DD68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AF3F6E3721F02A0FFDD30B4 /* Pods_FortuneCookie.framework */,
+				FA904DA490F4ED2DF5D6F019 /* Pods_FortuneCookieTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C745071158E57788855AA7A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB13364E46291F23D34FC7E0 /* Pods-FortuneCookie.debug.xcconfig */,
+				2226FBC7BDF07125F290B864 /* Pods-FortuneCookie.release.xcconfig */,
+				29A319ABE14B68ED503E2C11 /* Pods-FortuneCookieTests.debug.xcconfig */,
+				3C7A42F071EFFABE5A995963 /* Pods-FortuneCookieTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD819AE2234BA88600BBAD03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD6710112357C67B00A7662D /* FortuneModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD819AE4234BA89F00BBAD03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD819AE5234BA8BF00BBAD03 /* LoadingView.swift */,
+				CD819AF2234CDD9D00BBAD03 /* BreakCookieView.swift */,
+				CDBF5C28235E07F100AA8D2B /* AnimatedIntroView.swift */,
+				CD819AF4234D075800BBAD03 /* FortuneScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD819AE8234CD39900BBAD03 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CD819AFA234D472500BBAD03 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CD819AEA234CD80300BBAD03 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF5C2C235E21F100AA8D2B /* Segue */,
+				CD819AEB234CD81000BBAD03 /* Constraints */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD819AEB234CD81000BBAD03 /* Constraints */ = {
+			isa = PBXGroup;
+			children = (
+				CD819AEC234CD8B600BBAD03 /* ViewConstraints */,
+			);
+			path = Constraints;
+			sourceTree = "<group>";
+		};
+		CD819AEC234CD8B600BBAD03 /* ViewConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				CD819AED234CD8D400BBAD03 /* LoadingViewConstraints.swift */,
+				CD819AF6234D2C1400BBAD03 /* FortuneScreenViewConstraints.swift */,
+				CDBF5C2F235E597200AA8D2B /* AnimatedIntroViewConstraints.swift */,
+			);
+			path = ViewConstraints;
+			sourceTree = "<group>";
+		};
+		CD819AEF234CDB2300BBAD03 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD819AF0234CDB4200BBAD03 /* LoadingViewController.swift */,
+				CD819AF8234D3FEF00BBAD03 /* FortuneScreenViewController.swift */,
+				CDBF5C2A235E099000AA8D2B /* AnimatedIntroViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD819AFC234D593700BBAD03 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				CDB3011A235F5AFC00286C97 /* data-mango.json */,
+				CDB30119235F5AFC00286C97 /* default.json */,
+				CDB3011D235F5AFC00286C97 /* email-mango.json */,
+				CDB3011B235F5AFC00286C97 /* loading.json */,
+				CDB3011C235F5AFC00286C97 /* pow.json */,
+				CD839BE6234D5C1B00F8A04B /* mrcookiegetsdrunk.json */,
+				CD839BE4234D5A7A00F8A04B /* candm.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		CDBF5C2C235E21F100AA8D2B /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF5C2D235E225000AA8D2B /* AnimatedIntroViewSegue.swift */,
+			);
+			path = Segue;
+			sourceTree = "<group>";
+		};
+		CDC7D1F322E0C15B000CAAD1 = {
+			isa = PBXGroup;
+			children = (
+				CDC7D1FE22E0C15B000CAAD1 /* FortuneCookie */,
+				CDC7D21622E0C15D000CAAD1 /* FortuneCookieTests */,
+				CDC7D1FD22E0C15B000CAAD1 /* Products */,
+				C745071158E57788855AA7A2 /* Pods */,
+				3CE6ADDE383BD4BE8B14DD68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDC7D1FD22E0C15B000CAAD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDC7D1FC22E0C15B000CAAD1 /* FortuneCookie.app */,
+				CDC7D21322E0C15D000CAAD1 /* FortuneCookieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDC7D1FE22E0C15B000CAAD1 /* FortuneCookie */ = {
+			isa = PBXGroup;
+			children = (
+				CD819AFC234D593700BBAD03 /* Animations */,
+				CD819AEA234CD80300BBAD03 /* Extensions */,
+				CD819AEF234CDB2300BBAD03 /* Controller */,
+				CD819AE8234CD39900BBAD03 /* Networking */,
+				CD819AE4234BA89F00BBAD03 /* Views */,
+				CD819AE2234BA88600BBAD03 /* Model */,
+				CDC7D1FF22E0C15B000CAAD1 /* AppDelegate.swift */,
+				CDC7D20122E0C15B000CAAD1 /* ViewController.swift */,
+				CDC7D22222E0DE02000CAAD1 /* CookieCell.swift */,
+				CDC7D20322E0C15B000CAAD1 /* Main.storyboard */,
+				CDC7D20922E0C15D000CAAD1 /* Assets.xcassets */,
+				CDC7D20B22E0C15D000CAAD1 /* LaunchScreen.storyboard */,
+				CDC7D20E22E0C15D000CAAD1 /* Info.plist */,
+				CDC7D20622E0C15B000CAAD1 /* FortuneCookie.xcdatamodeld */,
+			);
+			path = FortuneCookie;
+			sourceTree = "<group>";
+		};
+		CDC7D21622E0C15D000CAAD1 /* FortuneCookieTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDC7D21722E0C15D000CAAD1 /* FortuneCookieTests.swift */,
+			);
+			path = FortuneCookieTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDC7D1FB22E0C15B000CAAD1 /* FortuneCookie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC7D21C22E0C15D000CAAD1 /* Build configuration list for PBXNativeTarget "FortuneCookie" */;
+			buildPhases = (
+				3B5911B68114DCAA7D2A6CD1 /* [CP] Check Pods Manifest.lock */,
+				CDC7D1F822E0C15B000CAAD1 /* Sources */,
+				CDC7D1F922E0C15B000CAAD1 /* Frameworks */,
+				CDC7D1FA22E0C15B000CAAD1 /* Resources */,
+				46D6F6A03E1CCFE4A718E635 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FortuneCookie;
+			productName = FortuneCookie;
+			productReference = CDC7D1FC22E0C15B000CAAD1 /* FortuneCookie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDC7D21222E0C15D000CAAD1 /* FortuneCookieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC7D21F22E0C15D000CAAD1 /* Build configuration list for PBXNativeTarget "FortuneCookieTests" */;
+			buildPhases = (
+				3F59D46938800EFE30FBF869 /* [CP] Check Pods Manifest.lock */,
+				CDC7D20F22E0C15D000CAAD1 /* Sources */,
+				CDC7D21022E0C15D000CAAD1 /* Frameworks */,
+				CDC7D21122E0C15D000CAAD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDC7D21522E0C15D000CAAD1 /* PBXTargetDependency */,
+			);
+			name = FortuneCookieTests;
+			productName = FortuneCookieTests;
+			productReference = CDC7D21322E0C15D000CAAD1 /* FortuneCookieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDC7D1F422E0C15B000CAAD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "MattHew Phraxayavong";
+				TargetAttributes = {
+					CDC7D1FB22E0C15B000CAAD1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CDC7D21222E0C15D000CAAD1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CDC7D1FB22E0C15B000CAAD1;
+					};
+				};
+			};
+			buildConfigurationList = CDC7D1F722E0C15B000CAAD1 /* Build configuration list for PBXProject "FortuneCookie" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDC7D1F322E0C15B000CAAD1;
+			productRefGroup = CDC7D1FD22E0C15B000CAAD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDC7D1FB22E0C15B000CAAD1 /* FortuneCookie */,
+				CDC7D21222E0C15D000CAAD1 /* FortuneCookieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDC7D1FA22E0C15B000CAAD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC7D20D22E0C15D000CAAD1 /* LaunchScreen.storyboard in Resources */,
+				CDB30122235F5AFC00286C97 /* email-mango.json in Resources */,
+				CDB3011F235F5AFC00286C97 /* data-mango.json in Resources */,
+				CDB30121235F5AFC00286C97 /* pow.json in Resources */,
+				CDB30120235F5AFC00286C97 /* loading.json in Resources */,
+				CD839BE5234D5A7A00F8A04B /* candm.json in Resources */,
+				CDC7D20A22E0C15D000CAAD1 /* Assets.xcassets in Resources */,
+				CDB3011E235F5AFC00286C97 /* default.json in Resources */,
+				CD839BE7234D5C1B00F8A04B /* mrcookiegetsdrunk.json in Resources */,
+				CDC7D20522E0C15B000CAAD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC7D21122E0C15D000CAAD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B5911B68114DCAA7D2A6CD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FortuneCookie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F59D46938800EFE30FBF869 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FortuneCookieTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46D6F6A03E1CCFE4A718E635 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FortuneCookie/Pods-FortuneCookie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FortuneCookie/Pods-FortuneCookie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FortuneCookie/Pods-FortuneCookie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDC7D1F822E0C15B000CAAD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD819AFB234D472500BBAD03 /* NetworkManager.swift in Sources */,
+				CD819AF1234CDB4200BBAD03 /* LoadingViewController.swift in Sources */,
+				CD6710122357C67B00A7662D /* FortuneModel.swift in Sources */,
+				CDC7D20222E0C15B000CAAD1 /* ViewController.swift in Sources */,
+				CD819AF3234CDD9D00BBAD03 /* BreakCookieView.swift in Sources */,
+				CDC7D22322E0DE02000CAAD1 /* CookieCell.swift in Sources */,
+				CDC7D20822E0C15B000CAAD1 /* FortuneCookie.xcdatamodeld in Sources */,
+				CD819AF9234D3FEF00BBAD03 /* FortuneScreenViewController.swift in Sources */,
+				CD819AE6234BA8BF00BBAD03 /* LoadingView.swift in Sources */,
+				CD819AEE234CD8D400BBAD03 /* LoadingViewConstraints.swift in Sources */,
+				CDBF5C2E235E225000AA8D2B /* AnimatedIntroViewSegue.swift in Sources */,
+				CD819AF7234D2C1400BBAD03 /* FortuneScreenViewConstraints.swift in Sources */,
+				CD819AF5234D075800BBAD03 /* FortuneScreenView.swift in Sources */,
+				CDBF5C29235E07F100AA8D2B /* AnimatedIntroView.swift in Sources */,
+				CDC7D20022E0C15B000CAAD1 /* AppDelegate.swift in Sources */,
+				CDBF5C30235E597200AA8D2B /* AnimatedIntroViewConstraints.swift in Sources */,
+				CDBF5C2B235E099000AA8D2B /* AnimatedIntroViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC7D20F22E0C15D000CAAD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC7D21822E0C15D000CAAD1 /* FortuneCookieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDC7D21522E0C15D000CAAD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDC7D1FB22E0C15B000CAAD1 /* FortuneCookie */;
+			targetProxy = CDC7D21422E0C15D000CAAD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDC7D20322E0C15B000CAAD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDC7D20422E0C15B000CAAD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDC7D20B22E0C15D000CAAD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDC7D20C22E0C15D000CAAD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDC7D21A22E0C15D000CAAD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDC7D21B22E0C15D000CAAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDC7D21D22E0C15D000CAAD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB13364E46291F23D34FC7E0 /* Pods-FortuneCookie.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortuneCookie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewphraxayavong.FortuneCookie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDC7D21E22E0C15D000CAAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2226FBC7BDF07125F290B864 /* Pods-FortuneCookie.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortuneCookie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewphraxayavong.FortuneCookie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDC7D22022E0C15D000CAAD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A319ABE14B68ED503E2C11 /* Pods-FortuneCookieTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortuneCookieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewphraxayavong.FortuneCookieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FortuneCookie.app/FortuneCookie";
+			};
+			name = Debug;
+		};
+		CDC7D22122E0C15D000CAAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7A42F071EFFABE5A995963 /* Pods-FortuneCookieTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FortuneCookieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewphraxayavong.FortuneCookieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FortuneCookie.app/FortuneCookie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDC7D1F722E0C15B000CAAD1 /* Build configuration list for PBXProject "FortuneCookie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC7D21A22E0C15D000CAAD1 /* Debug */,
+				CDC7D21B22E0C15D000CAAD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC7D21C22E0C15D000CAAD1 /* Build configuration list for PBXNativeTarget "FortuneCookie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC7D21D22E0C15D000CAAD1 /* Debug */,
+				CDC7D21E22E0C15D000CAAD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC7D21F22E0C15D000CAAD1 /* Build configuration list for PBXNativeTarget "FortuneCookieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC7D22022E0C15D000CAAD1 /* Debug */,
+				CDC7D22122E0C15D000CAAD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDC7D20622E0C15B000CAAD1 /* FortuneCookie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDC7D20722E0C15B000CAAD1 /* FortuneCookie.xcdatamodel */,
+			);
+			currentVersion = CDC7D20722E0C15B000CAAD1 /* FortuneCookie.xcdatamodel */;
+			path = FortuneCookie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CDC7D1F422E0C15B000CAAD1 /* Project object */;
+}

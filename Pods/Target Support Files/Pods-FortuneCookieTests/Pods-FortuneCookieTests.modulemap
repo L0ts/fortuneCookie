@@ -1,0 +1,6 @@
+framework module Pods_FortuneCookieTests {
+  umbrella header "Pods-FortuneCookieTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
